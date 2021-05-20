@@ -1,0 +1,23 @@
+.select-goods-first{
+  width: 50%;
+  @include breakpoint($mobile){
+    width: 100%;
+  }
+
+  &::after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(-45deg);
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    z-index: 1;
+  }
+}
+
+

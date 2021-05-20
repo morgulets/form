@@ -1,0 +1,20 @@
+.instruction{
+  width: 308px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #4B4B4F;
+  padding: 24px;
+  @include breakpoint($tablet){
+    height: 100%;
+    margin:40px 0px;
+  }
+  @include breakpoint($mobile-sm){
+    width: 100%;
+    padding: 20px 4px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+

@@ -1,0 +1,199 @@
+---
+layout: default
+title: BrainsCloud | Home
+---
+
+<div class="container">
+  <div class="main__content">
+    <div class="col_left">
+      <h1 class="title">FTL: Прямая машина</h1>
+<!----------------- маршрут -------------->
+      <div class="block__item">
+        <ul class="pretitle">
+          <li class="pretitle__num">1</li>
+          <li class="pretitle__name">Маршрут</li>
+        </ul>
+
+        <div class="title__input">Откуда</div>
+        <input type="text" class="input">
+
+        <div class="title__input">Куда</div>
+        <input type="text" class="input">
+      </div>
+<!------------- transport --------------->
+      <div class="block__item">
+        <ul class="pretitle">
+          <li class="pretitle__num">2</li>
+          <li class="pretitle__name">Транспорт</li>
+        </ul>
+       
+<div class="transport">
+
+  <div class="select select-1">
+    <div class="title__input">Грузоподъёмность</div>
+    <div class="dropdown">
+      <button class="dropdown__button">Не выбрано </button>
+  
+      <ul class="dropdown__list">
+        <li class="dropdown__list-item" data-value="travel">Москва</li>
+        <li class="dropdown__list-item" data-value="travel2">Москва2</li>
+        <li class="dropdown__list-item" data-value="travel3">Москва3</li>
+        <li class="dropdown__list-item" data-value="travel4">Москва4</li>
+        <li class="dropdown__list-item" data-value="travel5">Москва5</li>
+       
+      </ul>
+      <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+    </div>
+  </div>
+  
+  <div class="select select-2">
+    <div class="title__input">Способ погрузки</div>
+    <div class="dropdown">
+      <button class="dropdown__button">Не выбрано </button>
+  
+      <ul class="dropdown__list">
+        <li class="dropdown__list-item" data-value="travel">Москва</li>
+        <li class="dropdown__list-item" data-value="travel2">Москва2</li>
+        <li class="dropdown__list-item" data-value="travel3">Москва3</li>
+        <li class="dropdown__list-item" data-value="travel4">Москва4</li>
+        <li class="dropdown__list-item" data-value="travel5">Москва5</li>
+       
+      </ul>
+      <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+    </div>
+    </div>
+  </div>
+</div>
+
+<!------------------ Груз --------------->
+
+      <div class="block__item">
+        <ul class="pretitle">
+          <li class="pretitle__num">3</li>
+          <li class="pretitle__name">Груз</li>
+        </ul>
+       
+
+  <div class="select select-goods-first">
+    <div class="title__input">Тип груза</div>
+    <div class="dropdown">
+      <button class="dropdown__button">Не выбрано </button>
+  
+      <ul class="dropdown__list">
+        <li class="dropdown__list-item" data-value="travel">Москва</li>
+        <li class="dropdown__list-item" data-value="travel2">Москва2</li>
+        <li class="dropdown__list-item" data-value="travel3">Москва3</li>
+        <li class="dropdown__list-item" data-value="travel4">Москва4</li>
+        <li class="dropdown__list-item" data-value="travel5">Москва5</li>
+       
+      </ul>
+      <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+    </div>
+  </div>
+
+  <div class="goods">
+
+  <div class="select select-1">
+    <div class="title__input">Класс опасности</div>
+    <div class="dropdown">
+      <button class="dropdown__button">Не выбрано </button>
+  
+      <ul class="dropdown__list">
+        <li class="dropdown__list-item" data-value="travel">Москва</li>
+        <li class="dropdown__list-item" data-value="travel2">Москва2</li>
+        <li class="dropdown__list-item" data-value="travel3">Москва3</li>
+        <li class="dropdown__list-item" data-value="travel4">Москва4</li>
+        <li class="dropdown__list-item" data-value="travel5">Москва5</li>
+       
+      </ul>
+      <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+    </div>
+  </div>
+
+  <div class="block__price">
+    <div class="title__input">Объявленная ценность, ₽</div>
+    
+    <input type="text" class="input__price" placeholder="≥1">
+  </div>
+      
+</div>
+
+<!-- block temperature -->
+
+<div class="checkbox">
+  <input id="checkbox" type="checkbox" class="checkbox__input">
+  <label for="checkbox" class="title__input title__input-padding">Требуется температурный режим</label>
+</div>
+  
+<div class="temperature" id="temperature">
+
+  <div class="block__price block__price--mr">
+    <div class="title__input">От, °C</div>
+    
+    <input type="text" class="input__price" placeholder="-20">
+  </div>
+  
+  <div class="block__price">
+    <div class="title__input">До, °C</div>
+    
+    <input type="text" class="input__price" placeholder="+23">
+  </div>
+
+  </div>
+</div><!-- block__item -->
+
+
+    <!----------- Прибытие ------------>
+      <div class="block__item">
+        <ul class="pretitle">
+          <li class="pretitle__num">4</li>
+          <li class="pretitle__name">Время</li>
+        </ul>
+      
+
+<div class="destination__title">
+  <div class="title__input">Когда прибыть на точку</div>
+  <div class="title__input">700 км в день</div>
+</div>
+      
+      <div class="destination">
+        <div class="destination__item">
+          <input type="checkbox" id="checkbox1" class="destination__input">
+          <label class="destination__label" for="checkbox1">Адрес не указан</label>
+        </div>
+        <button class="destination__btn">не выбрано</button>
+      </div>
+
+      <div class="destination">
+        <div class="destination__item">
+          <input type="checkbox" id="checkbox2" class="destination__input">
+          <label class="destination__label" for="checkbox2">Адрес не указан</label>
+        </div>
+        <button class="destination__btn">не выбрано</button>
+      </div>
+    
+    </div><!-- /block__item -->
+
+    <div class="block__item block__item-placeholder">
+      <div class="title__input">Комментарий к заказу</div>
+ <textarea placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу" class="textarea"></textarea>
+      
+    </div>
+    </div><!-- col-left -->
+
+
+    <div class="col_right">
+      <div class="instruction">
+        Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+      </div>
+    </div>
+
+    <div class="app">
+      <div class="wrap">
+        <div id="select"></div>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>

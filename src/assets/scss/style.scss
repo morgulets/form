@@ -1,0 +1,47 @@
+
+@import "vendor/vars";
+@import "vendor/mixins";
+
+*,
+::after,
+::before{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+ul,ol,li{
+  list-style: none;
+}
+img{
+  vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+body {
+    background-color: #343539;
+    font-size: 15px;
+    color: white;
+    line-height: 1.1;
+    @include breakpoint($tablet){
+        overflow-x: hidden;
+      }
+}
+
+
+
+@import "blocks/mainStyles";
+@import "blocks/goods";
+@import "blocks/destination";
+@import "blocks/placeholder";
+@import "blocks/instruction";
+@import "blocks/forSelect";
+@import "blocks/temperature";
